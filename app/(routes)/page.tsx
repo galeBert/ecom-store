@@ -8,6 +8,7 @@ import React from "react";
 export default async function HomePage() {
   const products = await getProducts({ isFeatured: true });
   const billboard = await getBillboards("500f8337-b930-45f9-b1d4-c09282cf83f1");
+  console.log(products, billboard);
 
   return (
     <Container>

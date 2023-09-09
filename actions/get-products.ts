@@ -17,7 +17,10 @@ const getProducts = async (query: Query): Promise<Product[]> => {
       ...query,
     },
   });
+
   const res = await axios.get(url);
+  console.log(url, res);
+
   return res.data;
 };
 

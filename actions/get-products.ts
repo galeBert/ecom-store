@@ -19,7 +19,7 @@ const getProducts = async (query: Query): Promise<Product[]> => {
   });
 
   const res = await axios.get(url);
-  console.log(url, res);
+  console.log("test", url, "URL", URL, "query");
 
   return res.data;
 };
